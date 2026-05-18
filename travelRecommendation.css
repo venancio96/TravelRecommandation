@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('beach_background.jpg');
+    background-size:cover;
+    width: 95%;
+    height:100%;
+}
+#mainDiv{
+     padding: auto;
+}
+nav{
+    background-color: #ED5A32;
+    padding:5px;
+    display:inline-flexbox;
+    border-radius:5cm;
+
+}
+nav ul li {
+    display:inline-flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    opacity: 85%;
+  }
+  nav button{
+    color: white;
+    opacity:85%;
+    background-color: #ED5A32;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5cm;
+    cursor:pointer;
+  }
+   nav button.onhover{
+    opacity:100%;
+  }
+  #searchInput{
+    border-radius: 5cm;
+    padding: 10px 10px;
+    opacity:65%;
+  }
+  p{
+    align-self:left;
+    font-style: italic;
+    color: white;
+    opacity:75%;
+  }
+  h1{
+    text-align: left;
+    color: white;
+    opacity:75%;
+  }
+   #contactForm input,
+        #contactForm textarea {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 8px;
+        opacity: 90%;
+    }
+        #contactForm button {
+        padding: 10px 10px;
+        background-color: #ED5A32;
+        display:inline-block;
+        color: white;
+        border: none;
+        border-radius: 5cqmax;
+        cursor: pointer;
+        opacity:65%;
+    }
+        #contactForm button:hover {
+        opacity:100%;
+        }
