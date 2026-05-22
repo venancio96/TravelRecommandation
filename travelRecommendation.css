@@ -10,9 +10,10 @@ body{
 }
 nav{
     background-color: #ED5A32;
-    padding:5px;
+    padding:1px;
     display:inline-flexbox;
-    border-radius:5cm;
+    border-radius:1cm;
+    opacity:85%;
 
 }
 nav ul li {
