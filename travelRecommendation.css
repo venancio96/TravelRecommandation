@@ -79,3 +79,15 @@ nav ul li {
         #contactForm button:hover {
         opacity:100%;
         }
+    #infoDiv{
+
+    }
+    #infoDiv p,h3{
+        text-align: center;
+        color:white;
+        width:300px;
+    }
+    #infoDiv img{
+        width:300px;
+        height:160px;
+    }
