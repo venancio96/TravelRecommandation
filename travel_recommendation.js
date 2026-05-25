@@ -14,9 +14,11 @@ function Search()
         {
             for(const city of country.cities)
             {
-                info.innerHTML += `<img src="${city.imageUrl}">`;
-                info.innerHTML +=`<h3>${city.name}</h3>`;
-                info.innerHTML +=`<p>${city.description}</p>`;
+                const card = document.createElement("div");
+                card.innerHTML += `<img src="${city.imageUrl}">`;
+                card.innerHTML +=`<h3>${city.name}</h3>`;
+                card.innerHTML +=`<p>${city.description}</p>`;
+                info.appendChild(card);
             }
         }
 
