@@ -8,7 +8,7 @@ function Search()
     fetch('travel_recommendation_api.json')
     .then(response => response.json())
     .then(data => {
-    if(input === "countries")
+    if(input === "countries" || input === "country")
     {
         for(const country of data.countries)
         {
@@ -23,17 +23,31 @@ function Search()
         }
 
     }
-    else if(input === "beach")
+    else if(input === "beach" || input === "beaches")
     {
-        console.log("beach")
+        for(const beach of data.beaches)
+        {
+             const card = document.createElement("div");
+                card.innerHTML += `<img src="${beach.imageUrl}">`;
+                card.innerHTML +=`<h3>${beach.name}</h3>`;
+                card.innerHTML +=`<p>${beach.description}</p>`;
+                info.appendChild(card);
+        }
     }
-    else if(input === "temple")
+    else if(input === "temple" || input === "temples")
     {
-        console.log("temple");
+        for(const temple of data.temples)
+        {
+             const card = document.createElement("div");
+                card.innerHTML += `<img src="${temple.imageUrl}">`;
+                card.innerHTML +=`<h3>${temple.name}</h3>`;
+                card.innerHTML +=`<p>${temple.description}</p>`;
+                info.appendChild(card);
+        }
     }
     else
     {
-        console.log("nothingfound");
+        alert("nothing was found");
     }
     })
     .catch(error =>{
@@ -42,3 +56,6 @@ function Search()
     });
 }
 searchBtn.addEventListener('click', Search);
+input.addEventListener('keydown', function(event){
+
+}

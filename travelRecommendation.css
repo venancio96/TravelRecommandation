@@ -44,7 +44,7 @@ nav ul li {
     opacity:100%;
   }
   #searchInput{
-    border-radius: 5cm;
+    border-radius: 5px;
     padding: 10px 10px;
     opacity:65%;
   }
