@@ -1,4 +1,5 @@
 const searchBtn = document.getElementById("searchBtn");
+const resetBtn = document.getElementById("resetBtn");
 function Search()
 {
     const input = document.getElementById("searchInput").value.toLowerCase();
@@ -55,7 +56,12 @@ function Search()
 			console.log("error");
     });
 }
-searchBtn.addEventListener('click', Search);
-input.addEventListener('keydown', function(event){
-
+function Clear()
+{
+    info = document.getElementById("infoDiv");
+    info.innerHTML = "";
 }
+searchBtn.addEventListener('click', Search);
+resetBtn.addEventListener('click', Clear);
+//comment
+
